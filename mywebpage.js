@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
 
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-<script src="mywebpage.js"></script>
-<!-- Create an element where the map will take place -->
-<svg id="my_dataviz" width="400" height="300"></svg>
-
-<!-- <script>
 
     // The svg
-   var svg = d3.select("svg"),
+    var svg = d3.select("svg"),
         width = +svg.attr("width"),
         height = +svg.attr("height");
 
@@ -37,7 +26,6 @@
         .defer(d3.csv, "world_population_d3_example_data.csv", function (d) { data.set(d.code, +d.pop); })
         .await(ready);
 
-
     function ready(error, topo) {
 
         // Draw the map
@@ -57,4 +45,3 @@
             });
     }
 
-</script>  -->
