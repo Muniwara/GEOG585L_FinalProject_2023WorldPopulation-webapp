@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<h1 World population map ></h1>
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-<script src="mywebpage.js"></script>
-<!-- Create an element where the map will take place -->
-<svg id="my_dataviz" width="400" height="300"></svg>
+<!--I added the the css folder/file before the map became selectable. Note: Copied the css file from lab 5 task 2 deliverable 2!-->
+<link rel="stylesheet" href="myCSSfile/worldpop.css">
 
-<!-- <script>
+<!-- Create an element where the map will take place -->
+<svg id="my_dataviz" width="800" height="600"></svg>
+
+
+<!-- I placed the mywebpage.js scrip tag under the svg because the refrence file i commented out had the whole script the svg too
+WWhen i placed it under the lin e 7, the code did not work.  -->
+<script src="mywebpage.js"></script>
+<!--<script>
 
     // The svg
    var svg = d3.select("svg"),
@@ -57,4 +64,4 @@
             });
     }
 
-</script>  -->
+ </script> -->

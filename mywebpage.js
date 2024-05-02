@@ -11,6 +11,7 @@
         .scale(70)
         .center([0, 20])
         .translate([width / 2, height / 2]);
+        
 
     // Data and color scale
     var data = d3.map();
@@ -23,7 +24,8 @@
         //.defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
         .defer(d3.json, "world.geojson")
         //.defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function (d) { data.set(d.code, +d.pop); })
-        .defer(d3.csv, "world_population_d3_example_data.csv", function (d) { data.set(d.code, +d.pop); })
+       // .defer(d3.csv, "world_population_d3_example_data.csv", function (d) { data.set(d.code, +d.pop); })
+        .defer(d3.csv, "current_population.csv", function (d) { data.set(d.code, +d.pop); })
         .await(ready);
 
     function ready(error, topo) {
