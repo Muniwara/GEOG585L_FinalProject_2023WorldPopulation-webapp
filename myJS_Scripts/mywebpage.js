@@ -40,8 +40,8 @@ var legend = d3.legendColor()
 d3.queue()
     //   .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
     // .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) { data.set(d.code, +d.pop); })
-    .defer(d3.json, "world.geojson")
-    .defer(d3.csv, "current_population.csv", function (d) { data.set(d.code, +d.pop_2023); })
+    .defer(d3.json, "data/world.geojson")
+    .defer(d3.csv, "data/current_population.csv", function (d) { data.set(d.code, +d.pop_2023); })
     .await(ready);
 
 function ready(error, topo) {
